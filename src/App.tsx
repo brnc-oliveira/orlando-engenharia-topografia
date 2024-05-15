@@ -1,9 +1,7 @@
-import './App.css'
-
 import { Outlet } from 'react-router-dom'
 import { Fragment } from 'react/jsx-runtime'
 
-import Footer from './shared/components/Footer'
+// import Footer from './shared/components/Footer'
 import Header from './shared/components/Header'
 
 function App() {
@@ -12,7 +10,7 @@ function App() {
     <Fragment>
       <Header />
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </Fragment>
   )
 }
