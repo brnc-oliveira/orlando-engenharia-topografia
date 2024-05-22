@@ -11,7 +11,7 @@ import Contact from "./components/Contact";
 export default function Home() {
     return (
         <Fragment>
-            <section>
+            <section className="mt-[90px]" id="initial-section">
                 <Slider />
             </section>
 
@@ -23,19 +23,19 @@ export default function Home() {
                 <Technology />
             </section>
 
-            <section className="my-4">
+            <section className="my-4" id="services-section">
                 <Services />
             </section>
 
-            <section className="my-4">
+            <section className="my-4" id="about-section">
                 <About />
             </section>
 
-            <section className="my-4">
+            <section className="my-4" id="localization-section">
                 <Localization />
             </section>
 
-            <section className="my-4">
+            <section className="my-4" id="contact-section">
                 <Contact />
             </section>
         </Fragment>

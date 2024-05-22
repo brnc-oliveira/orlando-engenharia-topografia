@@ -6,7 +6,8 @@ export default {
    primary: '#153E5E',
    secound: '#F5AF4F',
    white: '#FFFFFF',
-   gray: '#4D4D4D'
+   gray: '#4D4D4D',
+   neutralGray: '#909090'
   },
   extend: {
    fontSize: {
