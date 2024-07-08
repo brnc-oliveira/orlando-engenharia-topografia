@@ -3,10 +3,11 @@ import { Fragment } from "react/jsx-runtime";
 import Slider from "./components/Slider";
 import Pictures from "./components/Pictures";
 import Technology from "./components/Technology";
-import Services from "./components/Services";
 import About from "./components/About";
 import Localization from "./components/Localization";
 import Contact from "./components/Contact";
+import CoreServices from "./components/CoreServices";
+import OthersServices from "./components/OthersServices";
 
 export default function Home() {
     return (
@@ -15,28 +16,32 @@ export default function Home() {
                 <Slider />
             </section>
 
-            <section className="my-4">
+            <section>
                 <Pictures />
             </section>
 
-            <section className="my-4">
+            <section id="services-section">
+                <CoreServices />
+            </section>
+
+            <section>
                 <Technology />
             </section>
 
-            <section className="my-4" id="services-section">
-                <Services />
-            </section>
-
-            <section className="my-4" id="about-section">
+            <section id="about-section">
                 <About />
             </section>
 
-            <section className="my-4" id="localization-section">
-                <Localization />
+            <section id="services-section">
+                <OthersServices />
             </section>
 
-            <section className="my-4" id="contact-section">
+            <section id="contact-section">
                 <Contact />
+            </section>
+
+            <section id="localization-section">
+                <Localization />
             </section>
         </Fragment>
     );

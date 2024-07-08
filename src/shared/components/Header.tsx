@@ -12,20 +12,20 @@ export default function Header() {
     };
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-10 bg-white md:flex md:items-center md:justify-between">
+        <nav className="fixed top-0 left-0 w-full z-10 bg-white lg:flex md:items-center md:justify-between shadow-lg">
             <div className="flex justify-between items-center p-4">
                 <span className="text-2xl font-[Poppins] cursor-pointer">
                     <a href="#initial-section">
-                        <img className="h-14 inline" src={logo} alt="Logo" />
+                        <img className="h-12 md:h-14 inline" src={logo} alt="Logo" />
                     </a>
                 </span>
 
-                <span className="text-3xl cursor-pointer mx-2 md:hidden block" onClick={toggleMenu}>
+                <span className="text-3xl cursor-pointer mx-2 lg:hidden block" onClick={toggleMenu}>
                     {menuIsOpen ? <IoClose /> : <IoMenu />}
                 </span>
             </div>
 
-            <ul className={`${menuIsOpen && 'top-[80px] opacity-100'} md:flex md:items-center z-[-1] md:z-10 md:static absolute bg-white w-full md:w-auto md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 flex flex-col md:flex-row items-center justify-center`}>
+            <ul className={`${menuIsOpen && 'top-[80px] opacity-100'} lg:flex lg:items-center z-[-1] lg:z-10 lg:static absolute bg-white w-full lg:w-auto lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 flex flex-col lg:flex-row items-center justify-center`}>
                 <li className="mx-4 my-2 md:my-0">
                     <a href="#initial-section" onClick={toggleMenu} className="text-lg hover:text-cyan-500 duration-500">Página Inicial</a>
                 </li>

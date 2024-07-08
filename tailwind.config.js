@@ -7,11 +7,13 @@ export default {
    secound: '#F5AF4F',
    white: '#FFFFFF',
    gray: '#4D4D4D',
-   neutralGray: '#909090'
+   neutralGray: '#C9C9C9'
   },
   extend: {
    fontSize: {
-    xxs: '0.53rem'
+    xxs: '0.62rem',
+    xxs2: '0.54rem',
+    md2: '0.80rem'
    }
   }
  },
